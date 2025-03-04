@@ -1,20 +1,14 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include "input.h"
+#include "arrays.h"
 
 #define LEN 10
-
-int sequentialSearch(int val, int arr[], int arrLength);
-int maximumIndex(int arr[], int arrLength);
-int minimumIndex(int arr[], int arrLength);
-void bubbleSortAscending(int arr[], int arrLength);
-void selectionSortDescending(int arr[], int arrLength);
-void printArray(int arr[], int arrLength);
 
 int main() {
 
     int v[LEN] = {26, 49, 1, 12, 2, 14, 29, 34, 44, 35};
-    printArray(v, LEN);
+    arrayPrint(v, LEN);
 
     int val;
     printf("Lets search a number?: ");
@@ -33,18 +27,5 @@ int main() {
     return EXIT_SUCCESS;
 }
 
-/* TODO: missing function definitions */ 
 
-int sequentialSearch(int val, int arr[], int arrLength) {
-    /* TODO */
-    return -1;
-}
-
-void printArray(int arr[], int arrLength) {
-    printf("[ ");
-    for(int i=0; i<arrLength; i++) {
-        printf("%d%s", arr[i], (i < arrLength - 1 ? ", " : ""));
-    }
-    printf("]\n");
-}
 
